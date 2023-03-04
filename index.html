@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+            font-family: 'Shantell Sans', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="text-white text-center">HI From Sifat-E-Sadakin</p>
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="city-name" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button onclick="searchTemperature()" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="weather-status text-white d-flex justify-content-around align-items-center">
+            <div class="">
+                <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <h1 id="city">Dhaka</h1>
+
+            </div>
+            <div class=" ">
+                <h3>Current Temperature <span id="temperature"> 30.00</span>&deg;C</h3>
+            <h3> Feels Like<span id="fl"> 32.06</span>&deg;C</h3>
+            </div>
+            
+
+        </div>
+
+        <div id="loader" class="d-flex justify-content-center visually-hidden">
+            <div class="spinner-grow text-light" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+
+
+        <div class="weather-status text-white text-center p-5">
+            
+            
+            <h3> Humidity <span id="humidity"> 38.06</span>%</h3>
+            <h3> Wind Speed <span id="ws"> 38.06</span>Km/h</h3>
+            <h1 id="condition" class="lead">Clouds</h1>
+            <h1 id="country" class="lead"></h1>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
